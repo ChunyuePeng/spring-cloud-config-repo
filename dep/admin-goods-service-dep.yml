@@ -3,7 +3,7 @@ spring:
     name: admin-goods-service
   datasource:
     druid:
-      url:  jdbc:mysql://120.26.176.128:3306/social_commerce?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false
+      url:  jdbc:mysql://172.16.74.208:3306/social_commerce?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false
       driver-class-name:  com.mysql.cj.jdbc.Driver
       username:  sc12345
       password:  sc12345
@@ -27,8 +27,9 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8001/eureka/
+      defaultZone: http://172.16.74.208:8001/eureka/
   instance:
+    ip-address: 172.16.50.224
     lease-renewal-interval-in-seconds: 10      # 心跳时间，即服务续约间隔时间（缺省为30s）
     lease-expiration-duration-in-seconds: 60  # 发呆时间，即服务续约到期时间（缺省为90s）
     prefer-ip-address: true
