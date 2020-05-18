@@ -8,7 +8,7 @@ eureka:
     register-with-eureka: false #不注册服务
     fetch-registry: false #不拉去服务清单
     serviceUrl:
-      defaultZone: http://localhost:${server.port}/eureka/ #多个通过英文逗号分隔
+      defaultZone: http://172.16.74.208:${server.port}/eureka/ #多个通过英文逗号分隔
 
 server:
   port: 8001
