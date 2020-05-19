@@ -44,3 +44,8 @@ eureka:
 mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+feign:
+  hystrix:
+    enabled: true //feign开启hystrix支持
